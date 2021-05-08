@@ -6,6 +6,5 @@ function atualizarTokenTela() {
 }
 
 function atualizarTarefas() {
-    document.querySelector('#containerTarefas').innerHTML = "";
     mostraTarefas();
 }

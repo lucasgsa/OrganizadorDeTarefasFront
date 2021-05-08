@@ -34,10 +34,19 @@ function mostraTarefas() {
     var request = new XMLHttpRequest();
     request.open('GET', 'https://organizadordetarefas.herokuapp.com/tarefa/all/?token='+readToken());
     request.send();
+    criarCarregamento();
     request.onload = function() {
         var data = JSON.parse(this.responseText);
+        document.querySelector('#containerTarefas').innerHTML = "";
         receivedTarefas(data);
     }
+}
+
+function criarCarregamento() {
+    document.querySelector('#containerTarefas').innerHTML = "";
+    var carregamento = document.createElement("div");
+    carregamento.setAttribute("class", "carregamento");
+    document.querySelector('#containerTarefas').appendChild(carregamento);
 }
 
 function receivedTarefas(tarefas) {

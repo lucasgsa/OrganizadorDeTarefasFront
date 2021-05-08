@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="sortcut icon" href="images/lapizButton.png" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="styles/headerStyle.css" />
+        <link rel="stylesheet" type="text/css" href="styles/indexStyle.css" />
+        <link rel="stylesheet" type="text/css" href="styles/containerTarefasStyle.css" />
+        <title>Organizador de tarefas.</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="text_title">Organizador<br> de tarefas</h1>
+            <div id="separadorHeader"></div>
+            <div id="div_select_token">
+                <input id="text_box_select_token" type="text" placeholder="Token de acesso">
+                <input id="button_select_token" type="button" value="Acessar token">
+            </div>
+            <div>
+            </div>
+        </header>
+        <div id="text_token_atual">
+            <p>Token atual:</p>
+        </div>
+
+        <div id="containerTarefas">
+            <div class="tarefa">
+                <div class="superiorTarefa">
+                    <p class="titleTarefa">Titulo</p>
+                    <img class="concluirTarefa" src="images/xButton.png">
+                </div>
+                <p class="detalhesTarefa">detalhes aqui</p>
+                <p class="dataTarefa">2001-11-19</p>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="scripts/token.js"></script>
+        <script type="text/javascript" src="scripts/atualizar.js"></script>
+        <script type="text/javascript" src="scripts/requestAPI.js"></script>
+        <script type="text/javascript" src="scripts/init.js"></script>
+    </body>
+</html>

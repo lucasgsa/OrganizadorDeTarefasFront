@@ -43,6 +43,7 @@ function mostraTarefas() {
 function receivedTarefas(tarefas) {
     if (Object.keys(tarefas).length === 0){
         var texto = document.createElement("p");
+        texto.setAttribute("class", "nenhumaAdicionada");
         texto.innerText = "Nenhuma tarefa adicionada.";
         document.querySelector('#containerTarefas').appendChild(texto);
     }

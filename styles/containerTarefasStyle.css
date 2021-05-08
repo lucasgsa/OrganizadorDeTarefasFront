@@ -4,6 +4,10 @@
     flex-wrap: wrap;
 }
 
+.nenhumaAdicionada {
+    font-size: 40px;
+}
+
 .tarefa {
     border-width: 2px;
     border-style: solid;
@@ -81,5 +85,8 @@
     .concluirTarefa {
         width: 70px;
         height: 70px;
+    }
+    .nenhumaAdicionada {
+        font-size: 70px;
     }
 }

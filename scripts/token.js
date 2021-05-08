@@ -4,7 +4,7 @@ var textAcessToken = document.getElementById("text_box_select_token");
 function onClickAcessToken(){
     let tempToken = textAcessToken.value;
     defineToken(tempToken);
-    atualizarTokenTela();
+    init();
 }
 
 function readToken() {

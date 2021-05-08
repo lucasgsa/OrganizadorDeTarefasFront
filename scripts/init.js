@@ -7,7 +7,10 @@ function checkFirstTime() {
 function randomToken(){
     return Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 10);
 }
+function init(){
+    checkFirstTime();
+    atualizarTokenTela();
+    atualizarTarefas();
+}
 
-checkFirstTime();
-atualizarTokenTela();
-atualizarTarefas();
+init();

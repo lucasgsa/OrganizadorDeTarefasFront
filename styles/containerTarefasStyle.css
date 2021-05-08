@@ -64,8 +64,8 @@
 
 @media only screen and (min-height:1080px) and (min-width:720px) {
     .tarefa {
-        width: 500px;
-        height: 340px;
+        width: 600px;
+        height: 440px;
         border-left-width: 80px;
         padding: 20px;
     }

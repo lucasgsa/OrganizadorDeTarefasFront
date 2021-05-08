@@ -89,6 +89,9 @@
 }
 
 @media only screen and (min-height:1080px) and (min-width:720px) {
+    .addMenu .menuTop{
+        font-size: 100px;
+    }
     .addMenu .menuContent {
         width: 920px;
         height: 800px;

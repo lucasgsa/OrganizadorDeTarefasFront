@@ -7,6 +7,29 @@ function deleteTarefa(id){
     }
 }
 
+function criarTarefa(nome, data, cor, detalhes) {
+    let tarefaNova = {
+        "color": cor,
+        "data": data,
+        "detalhes": detalhes,
+        "nome": nome
+    }
+    if (data == null || data == "") {
+        alert("Data inválida");
+        return;
+    }
+    
+    var request = new XMLHttpRequest();
+    request.open('POST', 'https://organizadordetarefas.herokuapp.com/tarefa/?token='+readToken());
+    request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    request.send(JSON.stringify(tarefaNova));
+    request.onload = function() {
+        atualizarTarefas();
+    }
+    showAddDisplay();
+    limparCampos();
+}
+
 function mostraTarefas() {
     var request = new XMLHttpRequest();
     request.open('GET', 'https://organizadordetarefas.herokuapp.com/tarefa/all/?token='+readToken());

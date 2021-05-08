@@ -6,10 +6,12 @@
         <link rel="sortcut icon" href="images/lapizButton.png" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="styles/headerStyle.css" />
         <link rel="stylesheet" type="text/css" href="styles/indexStyle.css" />
+        <link rel="stylesheet" type="text/css" href="styles/addStyle.css" />
         <link rel="stylesheet" type="text/css" href="styles/containerTarefasStyle.css" />
         <title>Organizador de tarefas.</title>
     </head>
     <body>
+        <img id="plusButton" src="images/plusButton.png" />
         <header>
             <h1 id="text_title">Organizador<br> de tarefas</h1>
             <div id="separadorHeader"></div>
@@ -35,6 +37,23 @@
             </div>
         </div>
 
+        <div class="addMenu">
+            <div class="menuContent">
+                <div class="menuTop">
+                    <p>Adicionar uma nova tarefa</p>
+                    <img src="images/xButton.png"/>
+                </div>
+                <div class="menuMid">
+                    <input type="text" id="nomeTarefaAdd" placeholder="Nome da tarefa">
+                    <input type="text" id="detalhesTarefaAdd" placeholder="Detalhes">
+                    <input id="dataTarefaAdd" type="date">
+                    <input id="colorTarefaAdd" type="color">
+                    <button id="criarTarefa">Criar Tarefa</button>
+                </div>
+            </div>
+            <div id="sensorOff"></div>
+        </div>
+        <script type="text/javascript" src="scripts/addTarefa.js"></script>
         <script type="text/javascript" src="scripts/token.js"></script>
         <script type="text/javascript" src="scripts/atualizar.js"></script>
         <script type="text/javascript" src="scripts/requestAPI.js"></script>

@@ -5,8 +5,7 @@
 }
 
 .tarefa {
-    flex: 0 1 200px;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     border-color: black;
     border-radius: 10px;
@@ -15,11 +14,12 @@
     border-left-color: rgb(0, 0, 0);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 170px;
     margin: 30px;
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
 
 .superiorTarefa {
@@ -33,6 +33,7 @@
     flex: 1;
     font-size: 25px;
     font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: left;
     margin-left: 5px;
 }
@@ -59,4 +60,26 @@
 .concluirTarefa {
     width: 30px;
     height: 30px;
+}
+
+@media only screen and (min-height:1080px) and (min-width:720px) {
+    .tarefa {
+        width: 500px;
+        height: 340px;
+        border-left-width: 80px;
+        padding: 20px;
+    }
+    .titleTarefa {
+        font-size: 80px;
+    }
+    .detalhesTarefa {
+        font-size: 50px;
+    }
+    .dataTarefa {
+        font-size: 25px;
+    }
+    .concluirTarefa {
+        width: 70px;
+        height: 70px;
+    }
 }
